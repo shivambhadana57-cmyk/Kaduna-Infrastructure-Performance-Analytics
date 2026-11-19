@@ -1,0 +1,41 @@
+# Power BI Dashboard
+
+This folder contains the Power BI report developed for the Kaduna Infrastructure Performance Analytics project.
+
+## Main File
+`Kaduna_Infrastructure_Performance.pbix`
+
+## Dashboard Pages
+
+### Page 1 – Project Performance Dashboard
+This page presents five KPI cards and four charts:
+1. Project Distribution by Status
+2. Project Distribution by Type
+3. Recorded Budget by Project Type (NGN)
+4. Projects by Procuring Entity
+
+### Page 2 – Interactive Project Filters
+This page contains two slicers:
+- Filter by Project Status
+- Filter by Project Type
+
+The slicers are synchronized across the report pages, allowing users to filter the dashboard and explore selected project categories.
+
+## KPI Measures
+The report includes five DAX measures:
+- Total Projects
+- Unique Project IDs
+- Total Recorded Budget
+- Projects with Start Dates
+- Projects with End Dates
+
+## Tools and Techniques
+- Power BI Desktop
+- Power Query for data preparation
+- DAX for KPI calculations
+- Bar charts, donut chart, cards and slicers
+
+## Usage
+Open `Kaduna_Infrastructure_Performance.pbix` using Microsoft Power BI Desktop to explore the report.
+
+**Note:** The dashboard reflects the information available in the source dataset. Missing values in date and procurement fields limit some performance assessments.

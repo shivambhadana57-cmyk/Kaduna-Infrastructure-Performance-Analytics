@@ -1,0 +1,38 @@
+# Data Directory
+
+This directory contains the dataset used for the Kaduna State Infrastructure Performance Analytics project.
+
+## Folder Structure
+
+```text
+data/
+├── raw/
+│   └── kaduna_infrastructure_original.xlsx
+├── processed/
+└── README.md
+```
+
+## Raw Dataset
+The original Excel workbook was obtained from the Kaduna State Public Procurement Authority (KADPPA) open data portal.
+
+**Original file:** `kaduna_infrastructure_original.xlsx`
+
+**Source:** https://ipdata.kdsg.gov.ng/public/open-data
+
+The workbook contains infrastructure project and procurement-related fields, including project identifiers, project titles, descriptions, status, type, budget information, dates, locations and procuring entities.
+
+## Data Preparation
+The dataset was inspected and transformed using Power Query in Power BI Desktop. The cleaning work included:
+- Checking column quality, distribution and profile statistics.
+- Removing two completely empty columns from the cleaned query.
+- Applying Trim and Clean to relevant text columns.
+- Checking date columns and retaining genuine missing date values.
+- Reviewing possible duplicate project identifiers.
+
+## Processed Data
+No separate processed CSV or Excel export was created for this project. The transformation steps are saved within the Power BI file in the `power_bi/` directory.
+
+## Data Limitations
+Some columns contain missing or incomplete information. In particular, the sector and tender value fields were empty in the inspected dataset, while project dates and tender-related fields had substantial missing values.
+
+Please refer to the project report for the detailed data quality assessment.
